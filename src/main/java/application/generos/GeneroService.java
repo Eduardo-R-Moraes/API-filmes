@@ -29,12 +29,12 @@ public class GeneroService {
         return new GeneroDTO(genero.get());
     }
 
-    public GeneroInsertDTO insert(GeneroInsertDTO dados) {
+    public GeneroDTO insert(GeneroInsertDTO dados) {
         Genero novoGenero = new Genero(dados);
-        return new GeneroInsertDTO(generoRepo.save(novoGenero));
+        return new GeneroDTO(generoRepo.save(novoGenero));
     }
 
-    public GeneroInsertDTO update(long id, String nome) {
+    public GeneroDTO update(long id, String nome) {
         Optional<Genero> genero = generoRepo.findById(id);
 
         if (genero.isEmpty()) {
@@ -45,7 +45,7 @@ public class GeneroService {
 
         genero.get().setNome(nome);
 
-        return new GeneroInsertDTO(generoRepo.save(genero.get()));
+        return new GeneroDTO(generoRepo.save(genero.get()));
     }
 
     public void delete(long id) {

@@ -27,12 +27,12 @@ public class GeneroController {
     }
 
     @PostMapping
-    public GeneroInsertDTO insert(@RequestBody GeneroInsertDTO novoGenero) {
+    public GeneroDTO insert(@RequestBody GeneroInsertDTO novoGenero) {
         return generoService.insert(novoGenero);
     }
 
     @PutMapping("/{id}")
-    public GeneroInsertDTO update(@PathVariable long id, @RequestBody GeneroInsertDTO genero) {
+    public GeneroDTO update(@PathVariable long id, @RequestBody GeneroInsertDTO genero) {
         return generoService.update(id, genero.nome());
     }
 
