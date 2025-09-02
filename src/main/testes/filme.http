@@ -1,0 +1,28 @@
+@url = https://cuddly-guacamole-7vgw6j9vp73xg7p-8080.app.github.dev/filmes
+
+GET {{url}}
+
+### 
+
+GET {{url}}/1
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "titulo": "Start Trek: A Ira e Khan",
+    "idGenero": 1
+}
+
+###
+PUT {{url}}/1
+Content-Type: application/json
+
+{
+    "titulo": "Harry Potter e a Pedra Filosofal",
+    "idGenero": 1
+}
+
+###
+DELETE {{url}}/2
