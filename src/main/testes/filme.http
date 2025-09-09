@@ -11,8 +11,8 @@ POST {{url}}
 Content-Type: application/json
 
 {
-    "titulo": "Start Trek: A Ira e Khan",
-    "idGenero": 1
+    "titulo": "Velozes e furioses",
+    "idGenero": 4
 }
 
 ###

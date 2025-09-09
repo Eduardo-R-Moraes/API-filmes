@@ -11,7 +11,7 @@ POST {{url}}
 Content-Type: application/json
 
 {
-    "nome": ""
+    "nome": "Braga"
 }
 
 ###

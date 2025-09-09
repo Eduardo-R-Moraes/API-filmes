@@ -1,0 +1,30 @@
+@url = https://cuddly-guacamole-7vgw6j9vp73xg7p-8080.app.github.dev/elencos
+
+GET {{url}}
+
+### 
+
+GET {{url}}/1
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "idFilme": "2",
+    "idArtista": "1",
+    "idFuncao": "1"
+}
+
+###
+PUT {{url}}/1
+Content-Type: application/json
+
+{
+    "idFilme": "2",
+    "idArtista": "2",
+    "idFuncao": "1"
+}
+
+###
+DELETE {{url}}/1
