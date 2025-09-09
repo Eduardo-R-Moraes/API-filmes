@@ -1,0 +1,26 @@
+@url = https://cuddly-guacamole-7vgw6j9vp73xg7p-8080.app.github.dev/artistas
+
+GET {{url}}
+
+### 
+
+GET {{url}}/1
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "nome": ""
+}
+
+###
+PUT {{url}}/1
+Content-Type: application/json
+
+{
+    "nome": "Eduardo atualizado."
+}
+
+###
+DELETE {{url}}/1
