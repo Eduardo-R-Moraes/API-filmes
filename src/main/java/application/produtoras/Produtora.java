@@ -26,4 +26,13 @@ public class Produtora {
     public Produtora(ProdutoraInsertDTO dados) {
         this.setNome(dados.nome());
     }
+
+    public Produtora(ProdutoraDTO dados) {
+        this.setId(dados.id());
+        this.setNome(dados.nome());
+    }
+
+    public Produtora(long id) {
+        this.setId(id);
+    }
 }

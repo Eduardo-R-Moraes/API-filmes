@@ -4,7 +4,7 @@ GET {{url}}
 
 ### 
 
-GET {{url}}/1
+GET {{url}}/3
 
 ###
 POST {{url}}
@@ -12,7 +12,8 @@ Content-Type: application/json
 
 {
     "titulo": "Velozes e furioses",
-    "idGenero": 4
+    "idGenero": 4,
+    "idsProdutoras": [1]
 }
 
 ###
@@ -21,7 +22,8 @@ Content-Type: application/json
 
 {
     "titulo": "Harry Potter e a Pedra Filosofal",
-    "idGenero": 1
+    "idGenero": 1,
+    "idsProdutoras": [1, 2]
 }
 
 ###
